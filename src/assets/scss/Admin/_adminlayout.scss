@@ -1,0 +1,40 @@
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,p{
+    margin: 0;  
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.bg-primary{
+    background-color: $first-color !important;
+}
+.content__page{
+    background-color: $body-color !important;
+    min-height: 100vh;
+    margin-top: $head-height;
+    padding: 20px;
+}
+
+
+@media screen and (min-width:968px) {
+    .content__page{
+        margin-top: $head-height;
+        margin-left: $sidebar-min-width;
+        padding: 20px;
+        // transition: 1.1s ease-in-out;
+        transition: 0.6s ease;
+    }
+
+    .active__padding{
+        margin-left: $sidebar-width;
+
+    }
+}
